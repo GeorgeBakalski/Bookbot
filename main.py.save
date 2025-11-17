@@ -1,0 +1,17 @@
+def get_book_text(f):
+	  GNU nano 7.2                                      main.py *                                              
+def get_book_text(f):
+        file_contents = f.read()
+        return file_contents
+
+def main():
+        with open("books/frankenstein.txt") as get_book_text:
+        print (get_book_text) 
+main()
+	file_contents = f.read()
+	return file_contents
+
+def main():
+	with open("books/frankenstein.txt") as get_book_text:
+	print (get_book_text)
+main()
