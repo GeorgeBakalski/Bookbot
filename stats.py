@@ -20,3 +20,12 @@ def counting_characters(f):
 			letters[ch] += 1
 	return letters
 
+def sort_on(entry):
+	return entry["num"]
+
+def make_list (f):
+	list_of_chars = []
+	for key, count in f.items():
+		list_of_chars.append({"char": key, "num": count})
+	list_of_chars.sort(reverse=True, key=sort_on)
+	return list_of_chars
